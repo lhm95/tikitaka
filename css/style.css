@@ -1,0 +1,274 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: NotoSans-Bold;
+  src: url(../font/NotoSansKR-Bold.otf) format("otf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: NotoSans-Medium;
+  src: url(../font/NotoSansKR-Medium.otf) format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: NotoSans-Regular;
+  src: url(../font/NotoSansKR-Regular.otf) format("otf");
+  font-weight: 400;
+}
+
+/* All Device */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+.cf:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: NotoSans-Regular;
+  font-weight: 400;
+}
+
+#wrap {
+  width: 100%;
+  height: 100%;
+}
+
+/* Mobile Device */
+/* 768px 미만 해상도의 모바일 기기를 위한 코드를 작성한다. 모든 해상도에서 이 코드가 실행됨. 미디어 쿼리를 지원하지 않는 모바일 기기를 위해 미디어 쿼리 구문을 사용하지 않는다. */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  line-height: 30px;
+  padding: 20px;
+  overflow: hidden;
+  background: #fff;
+}
+
+header .menuBtn {
+  width: 30px;
+  height: 30px;
+  background: #000;
+  float: left;
+}
+
+header .aboutBtn {
+  float: right;
+  line-height: 30px;
+  font-size: 1.2rem;
+}
+
+header .aboutBtn span {
+  width: 16px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+header .aboutBtn span img {
+  width: 100%;
+}
+
+section.s01 {
+  width: 100%;
+  height: 100%;
+  background: #f6f6f6;
+}
+
+section.s01 h2 {
+  font-size: 100px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 2rem;
+}
+
+section.s02 {
+}
+section.s02 ul {
+  width: 100%;
+}
+section.s02 ul {
+}
+section.s02 ul li {
+  width: 100%;
+  padding: 10px;
+}
+section.s02 ul li img {
+  width: 100%;
+}
+section.s02 ul li:nth-child(1) {
+  background: #595fe3;
+}
+section.s02 ul li:nth-child(2) {
+  background: #373867;
+}
+
+footer {
+  min-height: 150px;
+}
+footer ul {
+  text-align: center;
+}
+footer ul li {
+  display: inline-block;
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 50px;
+}
+footer ul li:after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 15px;
+  background: #ccc;
+}
+footer ul li:nth-child(3)::after {
+  display: none;
+}
+footer ul li:last-child::after {
+  display: none;
+}
+footer ul li p {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+/* Tablet &amp; Desktop Device */
+@media all and (min-width: 768px) {
+  /* 사용자 해상도가 768px 이상일 때 이 코드가 실행됨. 테블릿과 데스크톱의 공통 코드를 작성한다. */
+}
+
+/* Tablet Device */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  /* 사용자 해상도가 768px 이상이고 1024px 이하일 때 이 코드가 실행됨. 아이패드 또는 비교적 작은 해상도의 랩탑이나 데스크톱에 대응하는 코드를 작성한다. */
+}
+
+/* Desktop Device */
+@media all and (min-width: 1025px) {
+  /* 사용자 해상도가 1025px 이상일 때 이 코드가 실행됨. 1025px 이상의 랩탑 또는 데스크톱에 대응하는 코드를 작성한다. */
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 50px;
+    padding: 30px;
+    overflow: hidden;
+    background: #fff;
+  }
+
+  header .menuBtn {
+    width: 50px;
+    height: 50px;
+    background: #000;
+    float: left;
+  }
+
+  header .aboutBtn {
+    float: right;
+    line-height: 50px;
+    font-size: 1.2rem;
+  }
+
+  header .aboutBtn span {
+    width: 16px;
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  header .aboutBtn span img {
+    width: 100%;
+  }
+
+  section.s01 {
+    width: 100%;
+    height: 100%;
+    background: #f6f6f6;
+  }
+
+  section.s01 h2 {
+    font-size: 100px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  section.s02 {
+  }
+  section.s02 ul {
+    width: 100%;
+  }
+  section.s02 ul {
+  }
+  section.s02 ul li {
+    width: 50%;
+    padding: 10px;
+  }
+  section.s02 ul li img {
+    width: 100%;
+  }
+  section.s02 ul li:nth-child(1) {
+    background: #595fe3;
+    float: left;
+  }
+  section.s02 ul li:nth-child(2) {
+    background: #373867;
+    float: right;
+  }
+
+  footer {
+    line-height: 200px;
+  }
+  footer ul {
+    text-align: center;
+  }
+  footer ul li {
+    display: inline-block;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  footer ul li:after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 15px;
+    background: #ccc;
+  }
+  footer ul li:nth-child(3)::after {
+    display: inline-block;
+  }
+  footer ul li:last-child::after {
+    display: none;
+  }
+  footer ul li p {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 20px;
+  }
+}
